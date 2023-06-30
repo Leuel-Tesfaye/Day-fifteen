@@ -84,3 +84,41 @@ const student2 = new Student ('juliana' , 'rope', 'julichris91@gmail.com' , 'pas
 
 console.log(student1.getFullName())
 console.log(student2.getFullName())
+
+//getter : allow us to access a value from the object. 
+
+class Students {
+  constructor(firstName, lastName, email, password){
+    console.log(this)
+    this.firstName = firstName 
+    this.lastName = lastName
+    this.email = email
+    this.password = password
+  }
+  getFullName () {
+    const fullName = this.firstName + ' ' + this.lastName
+    return fullName
+  }
+  
+  get getEmail () {
+    return this.email
+  }
+}
+const student3 = new Students ('prince' , 'hope','tesfayeleuel91@gmail.com' , 'password' )
+console.log(student3.getEmail)
+
+// setter method : allows us to modify the value of certain properties 
+
+class Fruits {
+  constructor (name, taste) {
+    console.log(this)
+    this.name = name
+    this.taste = taste
+  }
+  set setName (name) {
+    this.name = name
+  }
+}
+const fruits = new Fruits ('lemon', 'bitter')
+fruits.setName = 'orange'
+console.log(fruits.name)
