@@ -34,7 +34,7 @@ class User{
 const user = new User( 'Prince', 'Hope')
 console.log(user)
 
-class User {
+class Users {
   constructor(email, password){
     console.log(this)
     this.email = email
@@ -42,16 +42,16 @@ class User {
   }
 }
 
-const user1 = new User('tesfayeleuel91@gmail.com', 'password')
-const user2 = new User('tesfayeleuel@gmail.com', 'Password')
-const user3 = new User('zablonGafat@gmail.com', 'password')
+const user1 = new Users('tesfayeleuel91@gmail.com', 'password')
+const user2 = new Users('tesfayeleuel@gmail.com', 'Password')
+const user3 = new Users('zablonGafat@gmail.com', 'password')
 console.log(user1)
 console.log(user2)
 console.log(user3)
 
 // person with more properties 
 
-class Person {
+class Persons {
   constructor (firstName, lastName, age, country, city){
     console.log(this)
     this.firstName = firstName
@@ -61,5 +61,26 @@ class Person {
     this.city = city
   }
 }
-const person2 = new Person ('prince', 'hope', '24','Ethiopia', 'Dessie')
+const person2 = new Persons ('prince', 'hope', '24','Ethiopia', 'Dessie')
 console.log(person2)
+
+// class methods 
+
+class Student {
+  constructor(firstName, lastName, email, password){
+    console.log(this)
+    this.firstName = firstName 
+    this.lastName = lastName
+    this.email = email
+    this.password = password
+  }
+  getFullName () {
+    const fullName = this.firstName + ' ' + this.lastName
+    return fullName
+  }
+}
+const student1 = new Student ('prince' , 'hope', '24','tesfayeleuel91@gmail.com' , 'password' )
+const student2 = new Student ('juliana' , 'rope', 'julichris91@gmail.com' , 'password' )
+
+console.log(student1.getFullName())
+console.log(student2.getFullName())
