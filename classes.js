@@ -122,3 +122,18 @@ class Fruits {
 const fruits = new Fruits ('lemon', 'bitter')
 fruits.setName = 'orange'
 console.log(fruits.name)
+
+// inheritance : we can access all the properties and methods of the parent class . 
+class employee extends Person {
+  // code goes here 
+}
+
+class Employee extends Person {
+  saySomething () {
+    console.log('I am the child of the person class')
+  }
+}
+
+const Employees = new Employee ('leuel',' tesfaye', 'Ethiopia')
+console.log(Employees)
+console.log(Employees.saySomething())
