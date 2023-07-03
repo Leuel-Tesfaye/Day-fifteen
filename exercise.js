@@ -41,5 +41,5 @@ class PersonAccount {
     }
 }
 
-const personAccount = new PersonAccount ('Prince', 'lastName', 'incomes', 'expenses' , 'totalExpenses')
+const personAccount = new PersonAccount ('Prince', 'Hope', '$2000', '$500' , '@700')
 console.log(personAccount)
